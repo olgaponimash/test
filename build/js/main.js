@@ -13,13 +13,5 @@ $(document).ready(function () {
         axis: "y",
         theme: "dark"
     });
-
-    function setText(message) {
-        text = message;
-    }
-    var text = 'Текст';
-    console.log(text);
-    setText('Сообщение');
-    console.log(text);
 });
 //# sourceMappingURL=main.js.map
