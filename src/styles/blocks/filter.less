@@ -1,0 +1,79 @@
+.filter {
+    
+    .search {
+        margin-bottom: 16px;
+        margin-right: 0;
+
+        &__icon {
+            width: 16px;
+            height: 16px;
+            left: 12px;
+            opacity: 0.3;
+        }
+
+        &__input {
+           border-color: #D5D5D5;
+           font-family: PT Sans;
+           font-size: 14px;
+           font-style: normal;
+           font-weight: 400;
+           line-height: 16px; 
+           padding: 10px 16px 10px 34px;
+           border-radius: 4px;
+
+           &::-webkit-input-placeholder {        
+                color: #AAA;
+                font-family: PT Sans;
+            }
+            &::-moz-placeholder {        
+                color: #AAA;
+                font-family: PT Sans;
+            }
+            &:-moz-placeholder  {        
+                color: #AAA;
+                font-family: PT Sans;
+            }
+            &:-ms-input-placeholder  {        
+                color: #AAA;
+                font-family: PT Sans;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; 
+        margin-bottom: 16px;
+
+        &--center {
+            justify-content: center;
+        }
+    }
+
+    &__reset {
+        display: inline-flex;
+        align-items: center;
+        color: #AAA;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 12px; 
+        text-decoration-line: underline;
+    }
+   
+    &__section {
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+

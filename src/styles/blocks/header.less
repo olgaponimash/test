@@ -1,0 +1,44 @@
+
+.header {
+    margin-bottom: 24px;
+    
+    &__wrap {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .logo {
+        flex: none;
+        margin-right: 8px;
+    }
+
+    .btn--catalog {
+        flex: none;
+        margin-right: 24px;
+    }
+
+}
+@media(max-width: 1300px) {
+    .header {
+        .logo {
+            width: 100px;
+        }
+
+        .btn--catalog {
+            flex: none;
+            margin-right: 10px;
+        }
+
+        .search {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    header {
+        display: none;
+    }
+}
+

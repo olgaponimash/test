@@ -1,0 +1,52 @@
+.catalog {
+    display: flex;
+
+    &__filter {
+        width: 280px;
+        flex: none;
+    }
+
+    &__body {
+        padding-left: 36px;
+
+        .search {
+            display: none;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .catalog {
+        &__filter {
+            width: 200px;
+        }
+    }
+}
+
+
+@media(max-width: 960px) {
+    .catalog {
+        &__filter {
+            display: none;
+        }
+
+        &__body {
+            padding-left: 0;
+
+            .search {
+                display: flex;
+                align-items: center;
+            }
+
+            h2 {
+                display: block;
+                margin-bottom: 12px;
+                padding-left: 8px;
+            }
+        }
+    }
+}

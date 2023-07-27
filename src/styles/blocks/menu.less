@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    
+
+    &>ul {
+        display: flex;
+        align-items: center;
+
+        &>li {
+            margin-right: 20px;
+
+
+            a {
+                color: #393939;
+                font-size: 14px;
+                line-height: normal;
+
+                &:hover {
+                    color: #125BAE;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            } 
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .menu {
+        &>ul {
+            &>li {
+                margin-right: 8px;
+            }
+        }
+    }
+}

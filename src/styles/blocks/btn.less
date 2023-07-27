@@ -1,0 +1,170 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-family: Inter;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px; 
+    padding: 16px 23px;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #73AFF4;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, color 0.3s ease;
+
+    &--blue {
+        color: #7397F5;
+    }
+
+    &--fullblue {
+        color: #fff;
+        background-color: #7397F5;
+    }
+
+    &--grey {
+        border-color: #AAA;
+        color: #AAA;
+    }
+
+    &--long {
+        display: flex;
+        width: 100%;
+    }
+
+    &--bold {
+        font-weight: 700;
+    }
+
+    &--pt {
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    &--middle {
+        border-radius: 4px;
+        padding: 10px 15px;
+    }
+}
+
+@media(min-width: 960px) {
+    .btn {
+        &:hover {
+            background-color: #7397F5;
+            color: #fff;
+
+            .svg-icon {
+                use {
+                    stroke: #fff;
+                }
+            }
+        }
+
+        &--out-black {
+            &:hover {
+                background-color: #000;
+                color: #fff;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+
+        &--blue {
+
+            &:hover {
+                background-color: #7397F5;
+                color: #fff;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    
+
+
+        &--grey {
+            &:hover {
+                background-color: #000;
+                border-color: #000;
+                color: #fff;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+
+        &--red {
+            &:hover {
+                background-color: #000;
+                border-color: #000;
+                color: #fff;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+
+        &--orange {
+            &:hover {
+                background-color: #000;
+                border-color: #000;
+                color: #fff;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+
+
+        &--default {
+            &:hover {
+                color: #fff;
+                background-color: @red;
+
+                .svg-icon {
+                    use {
+                        stroke: #fff;
+                    }
+                }
+            }
+
+            &:focus {
+                background-color: @red;
+            }
+
+            &:disabled {
+                background-color:  #A0A0A0;
+            }
+        }
+
+       
+
+        &--out-default {
+            &:hover {
+                background-color: #FF9B00;
+            }
+           
+        }
+    }
+}
+

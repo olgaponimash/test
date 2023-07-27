@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Главная</title>
+	//= templates/head.html
+</head>
+
+<body>
+	//= images/svg-icons.html
+	<div class="wrapper wrapper--inner">
+		//= templates/header.html
+
+		<main class="main">
+			<div class="container">
+				<div class="catalog">
+
+					//= templates/filter.html
+					
+					<div class="catalog__body">
+						<div class="search">
+							<div class="search__wrap">
+								<div class="search__back">
+									<svg width="20" height="20" viewBox="0 0 20 20" class="svg-icon">
+										<use xlink:href="#svg-back"></use>
+									</svg>
+								</div>
+								<form class="search__form">
+									<div class="search__form-block">
+										<input class="search__input" placeholder="Запрос" type="text">
+				
+									
+										<div class="search__delete">
+											<svg width="18" height="18" viewBox="0 0 18 18" class="svg-icon">
+												<use xlink:href="#svg-delete"></use>
+											</svg>
+										</div>
+									</div>
+									
+
+									<input value="Найти" class="search__submit btn btn--pt btn--fullblue" type="submit">
+								</form>
+							</div>
+							
+						</div>
+						<h2>Название категории</h2>
+						<div class="item__list">
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p2.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+							//= templates/p1.html
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</main>
+	</div>
+	
+	<!-- Footer Scripts -->
+	//= templates/custom-scripts.html
+</body>
+</html>
